@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Sandwich Maker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <H1>Sandwich Order Form:</H1>
@@ -20,7 +21,7 @@
                 <legend>Meat</legend>
                 <label><input type="checkbox" name="meat" value="ham">Ham</label>
                 <label><input type="checkbox" name="meat" value="turkey">Turkey</label>
-                <label><input type="checkbox" name="meat" value="roast-beef">Roast Beef</label>
+                <label><input type="checkbox" name="meat" value="roastBeef">Roast Beef</label>
                 <label><input type="checkbox" name="meat" value="salami">Salami</label>
                 <label><input type="checkbox" name="meat" value="spam">Spam</label>
             </fieldset><fieldset>
@@ -29,27 +30,40 @@
                 <label><input type="checkbox" name="cheese" value="cheddar">Cheddar</label>
                 <label><input type="checkbox" name="cheese" value="provolone">Provolone</label>
                 <label><input type="checkbox" name="cheese" value="swiss">Swiss</label>
-                <label><input type="checkbox" name="cheese" value="velveta">Velveta</label>
+                <label><input type="checkbox" name="cheese" value="velveta">Velveta&reg</label>
             </fieldset><fieldset>
                 <legend>Veggies</legend>
-                <label><input type="checkbox" name="veggies" value="onions">Onions</label>
-                <label><input type="checkbox" name="veggies" value="green-peppers">Green Peppers</label>
-                <label><input type="checkbox" name="veggies" value="banana-peppers">Banana Peppers</label>
-                <label><input type="checkbox" name="veggies" value="lettuce">Lettuce</label>
-                <label><input type="checkbox" name="veggies" value="tomatoes">Tomatoes</label>
+                <label><input type="checkbox" name="veggie" value="onions">Onions</label>
+                <label><input type="checkbox" name="veggie" value="greenPeppers">Green Peppers</label>
+                <label><input type="checkbox" name="veggie" value="bananaPeppers">Banana Peppers</label>
+                <label><input type="checkbox" name="veggie" value="lettuce">Lettuce</label>
+                <label><input type="checkbox" name="veggie" value="tomatoes">Tomatoes</label>
             </fieldset><fieldset>
                 <legend>Condiments</legend>
-                <label><input type="checkbox" name="condiments" value="mayo">Mayo</label>
-                <label><input type="checkbox" name="condiments" value="yellow-mustard">Yellow Mustard</label>
-                <label><input type="checkbox" name="condiments" value="dijon-mustard">Dijon Mustard</label>
-                <label><input type="checkbox" name="condiments" value="oil-and-vinegar">Oil and Vinegar</label>
-                <label><input type="checkbox" name="condiments" value="melted-chocolate">Melted Chocolate</label>
+                <label><input type="checkbox" name="condiment" value="mayo">Mayo</label>
+                <label><input type="checkbox" name="condiment" value="yellowMustard">Yellow Mustard</label>
+                <label><input type="checkbox" name="condiment" value="dijonMustard">Dijon Mustard</label>
+                <label><input type="checkbox" name="condiment" value="oilAndVinegar">Oil and Vinegar</label>
+                <label><input type="checkbox" name="condiment" value="meltedChocolate">Melted Hershey's&reg Chocolate</label>
             </fieldset>
         </fieldset>
     </form>
     <hr>
     <h3>Your Order:</h3>
-    <div id="output"></div>
+    <div id="output">
+        <p id="your-order">Your Order:</p>
+        <strong>Bread: </strong><div id="bread"></div><br>
+        <strong>Meats: </strong><div id="meat"></div><br>
+        <strong>Cheeses: </strong><div id="cheese"></div><br>
+        <strong>Veggies: </strong><div id="veggies"></div><br>
+        <strong>Condiments: </strong><div id="condiments"></div><br><br>
+        <strong>Total: </strong><div id="total"></div>
+
+
+
+
+
+    </div>
     <script type="text/javascript" src="javascripts/DOMHandler.js"></script>
     <script type="text/javascript" src="javascripts/SandwichMaker.js"></script>
     <script type="text/javascript" src="javascripts/bread.js"></script>

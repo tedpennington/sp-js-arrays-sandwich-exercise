@@ -102,16 +102,19 @@ console.log("SandwichMaker.js Loaded")
 var sandwichMaker = (function (){
     var totalPrice = 0;
     return {
-        addTopping: function(toppingPrice){
-            totalPrice += toppingPrice;
+        updateToppingSubtotal: function(){
+            totalPrice = sandwichMaker.getBreadTotal() + sandwichMaker.getMeatTotal() + sandwichMaker.getCheeseTotal() + sandwichMaker.getCondimentTotal() + sandwichMaker.getVeggieTotal();
         },
         getTotalPrice: function(){
             return totalPrice;
+        },
+        getSandwichOrder: function(){
+          return sandwichOrderObj;
         }
     };
 })();
 
-
+// Stopped May 9 while working on displaying sandwich order.  Displaying sandwich price was working correctly before started that process.  Leaving to go home.
 
 
 
