@@ -1,0 +1,40 @@
+
+
+
+body {
+    background-color: #74afad;
+}
+
+form {
+    background-color: #558c89;
+    padding: 3em;
+    margin: 1.5em;
+    border: none;
+    border-radius: 25%;
+    box-shadow: 10px 10px 5px 0px darkslategray;
+
+}
+
+#output {
+    /*background-image: url("img/serverpad.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left top;*/
+    background-color: #558c89;
+    padding: 3em;
+    margin: 1.5em;
+    border: none;
+    border-radius: 25%;
+    box-shadow: 10px 10px 5px 0px darkslategray;
+}
+
+#output div {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+#your-order {
+    text-decoration: underline;
+    font-weight: 900;
+}
